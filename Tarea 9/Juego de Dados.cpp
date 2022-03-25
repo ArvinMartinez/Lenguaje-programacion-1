@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
@@ -7,14 +8,12 @@ using namespace std;
 int dado1,dado2;
 string lanzar;
 
-
-
 int main()
 {
     while (true)
     {
         cout<<"--- Juego de dados, se gana con los numeros 4 , 6 , 8 y se pierden con los numeros 2 y 12 ---"<<endl<<endl;
-        cout<<"Presione cualquier tecla para lanzar los dados: "<<endl;
+        cout<<"Agregue una letra o numero para lanzar los dados: "<<endl;
         cin>>lanzar;
         system ("cls");
         for (int i=0;i<=1;i++)
@@ -28,7 +27,7 @@ int main()
         cout<<"La suma de los dados es: ["<<dado1+dado2<<"]"<<endl;
         if (dado1+dado2 == 4 or dado1+dado2 == 6 or dado1+dado2 == 8)
         {
-            cout<<"\n같� El jugador gana, la casa pierde 같�"<<endl;
+            cout<<"\n째째째 El jugador gana, la casa pierde 째째째"<<endl;
             break;
         }
         if (dado1+dado2 == 2 or dado1+dado2 == 12)
